@@ -13,15 +13,24 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
-    String getString(){
+    public String getString(){
+        scanner.nextLine();
         String input = scanner.nextLine();
         return input;
     }
+    public int getInt(){
+        int inp = scanner.nextInt();
+        return inp;
+
+    }
+
+
     boolean yesNo(){
         String answer = scanner.next();
         return (answer.equals("yes") || answer.equals("y"));
     }
-    int getInt(int min, int max) {
+
+    int getInteger(int min, int max) {
         int input;
         do {
             input = scanner.nextInt();
@@ -29,9 +38,8 @@ public class Input {
         return input;
 
     }
-//    double getDouble(){
-//
-//    }
+
+
 public  double getDouble(double min, double max) {
     double input;
 

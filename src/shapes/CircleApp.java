@@ -8,7 +8,7 @@ public class CircleApp {
 
         System.out.println("enter reduis");
 //not done yet
-        Circle circle1 = new Circle();
+        Circle circle1 = new Circle(5);
         System.out.println(circle1.getArea());
         System.out.println(circle1.getCircumference());
 
